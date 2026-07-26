@@ -4,6 +4,10 @@
 \usepackage{xcolor}
 \usepackage{amsmath}
 \graphicspath{{./images}}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+
 
 \title{Introduction to OSeMOSYS}
 \author{Presenter: Seangleng Khe}
@@ -14,7 +18,7 @@
 
 %------------------------------------------------------------------------------
 \begin{frame}{OSeMOSYS is...}
-  {\bf OSeMOSYS} an open-source software used for energy modeling system and capacity expansion planning.
+  {\bf OSeMOSYS} An open-source software used for energy modeling system and capacity expansion planning.
   \begin{figure}[h]
     \centering
     \includegraphics[scale=.25]{basic_osemosys.png}
@@ -102,33 +106,99 @@
 %------------------------------------------------------------------------------
 
 %------------------------------------------------------------------------------
-\begin{frame}
+\begin{frame}{Demands in Modeling}
+  Important elements in energy demands.
+  \begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{logic_1.png}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{logic_2.png}
+    \end{subfigure}
+  \end{figure}
+  
+\end{frame}
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+\begin{frame}{Costs in OSeMOSYS}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.28]{costs.png}
+  \end{figure}
+\end{frame}
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+\begin{frame}{Costs in OSeMOSYS}
+  Examples onshore and offshore wind power plant.
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{enumerate}
+        \item Capital Cost: \$1880/kW
+        \item Fixed Cost: \$48/kW
+        \item Operational Life: 25 years
+      \end{enumerate}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{enumerate}
+        \item capital Cost: \$4700/kW
+        \item Fixed Cost: \$165/kW
+        \item Operational Life: 25 years
+      \end{enumerate}
+    \end{column}
+  \end{columns}
+  \end{frame}
+%------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
+\begin{frame}{Environment and Social Impacts}
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+      \centering
+      \includegraphics[scale=.2]{biomass.png}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+      \centering
+      \includegraphics[scale=.2]{geothermal.png}
+    \end{subfigure}
+    \vspace{0.7cm}
+    \begin{subfigure}[b]{0.45\textwidth}
+      \centering
+      \includegraphics[scale=.2]{hydro.png}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+      \centering
+      \includegraphics[scale=.2]{nuclear.png}
+    \end{subfigure}
+\end{figure}
 
 \end{frame}
 %------------------------------------------------------------------------------
 
 %------------------------------------------------------------------------------
-\begin{frame}
-
+\begin{frame}{Energy Storage Modeling}
+  There are 6 different energy storage systems modelings
+  \begin{figure}[h]
+    \centering 
+    \includegraphics[scale=0.3]{energy_storage_modeling.png}
+  \end{figure}
 \end{frame}
 %------------------------------------------------------------------------------
 
 %------------------------------------------------------------------------------
-\begin{frame}
-
-\end{frame}
-%------------------------------------------------------------------------------
-
-%------------------------------------------------------------------------------
-\begin{frame}
-
-\end{frame}
-%------------------------------------------------------------------------------
-
-
-%------------------------------------------------------------------------------
-\begin{frame}
-
+\begin{frame}{Efficiency}
+  \begin{figure}[h]
+    \centering 
+    \includegraphics[scale=0.2]{input_output_ratio.png}
+  \end{figure}
 \end{frame}
 %------------------------------------------------------------------------------
 
